@@ -1,0 +1,16 @@
+Plan found with cost: 6
+1. (UNSTACK B1 B)
+2. (PUT-DOWN B1)
+3. (UNSTACK A1 A)
+4. (STACK A1 B1)
+5. (PICK-UP A)
+6. (STACK A B)
+Time: 0.00022
+Generated: 54
+Expanded: 39
+Total time: 0.000231
+Nodes generated during search: 55
+Nodes expanded during search: 39
+Nodes pruned by bound: 6
+Average ef. width: 2
+Max ef. width: 2

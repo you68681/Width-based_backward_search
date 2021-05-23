@@ -1,0 +1,5 @@
+(define (problem blocks-6-0)
+(:domain blocks)
+(:objects e a b c f d - block)
+(:init (on e a) (on e b) (on e c) (on e d) (on a b) (on a c) (on a f) (on a d) (on b e) (on b c) (on b f) (on b d) (on c e) (on c a) (on c f) (on c d) (on f e) (on f a) (on f b) (on f c) (on d e) (on d a) (on d b) (on d c) (on d f) (ontable e) (ontable a) (ontable b) (ontable c) (ontable f) (ontable d) (clear e) (clear a) (clear b) (clear c) (clear f) (clear d) (handempty) (holding e) (holding a) (holding b) (holding c) (holding f) (holding d))
+(:goal (and (on e a) (on e c) (on e f) (on e d) (on a e) (on a b) (on a f) (on a d) (on b e) (on b a) (on b c) (on b f) (on b d) (on c e) (on c a) (on c b) (on c f) (on c d) (on f a) (on f b) (on f c) (on f d) (on d e) (on d b) (on d c) (on d f) (ontable e) (ontable a) (ontable f) (ontable d) (clear e) (clear a) (clear b) (clear c) (holding e) (holding a) (holding b) (holding c) (holding f) (holding d))))

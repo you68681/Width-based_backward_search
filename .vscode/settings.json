@@ -1,0 +1,4 @@
+{
+    "pddlPlanner.executableOrService": "/home/chao/BFWS_Backward_Cmake/cmake-build-debug/bfws",
+    "pddlPlanner.executableOptions": "$(planner) $(--max_novelty 2 --k-BFWS true) $(/home/chao/BFWS_Backward_Cmake/new-pddl-domains/woodworking-sequential-optimal/domain.pddl) $(/home/chao/BFWS_Backward_Cmake/new-pddl-domains/woodworking-sequential-optimal/instances/instance-1.pddl)"
+}

@@ -85,7 +85,7 @@ Polynomial Search Algorithms::
 ```
 Polynomial Search Algorithms::
 
---forward-backward (=0)                    Forward k-BFWS(f5) first and then backward backward k-BFWS(f5) if forward search stops with no solution, default 2
+--forward-backward arg (=0)                    Forward k-BFWS(f5) first and then backward backward k-BFWS(f5) if forward search stops with no solution, default 2
 
 Search Algorithms::
 

@@ -645,6 +645,7 @@ void process_command_line_options( int ac, char** av, po::variables_map& vars ) 
             ( "k-BDWS-e-head", po::value<bool>()->default_value(false))
             ( "k-BDWS-e-close", po::value<bool>()->default_value(false))
             ( "k-BDWS-e-random", po::value<bool>()->default_value(false))
+            ( "k-BDWS-f", po::value<bool>()->default_value(false))
             ( "k-BDWS-f-head", po::value<bool>()->default_value(false))
             ( "k-BDWS-f-close", po::value<bool>()->default_value(false))
             ( "forward-backward", po::value<bool>()->default_value(false), "k-BFWS first, then k-BFWS-backward")
@@ -973,6 +974,28 @@ int main( int argc, char** argv ) {
 
         return 0;
     }
+    else if (vm["k-BDWS-f"].as<bool>()){
+
+        std::cout << "Starting search with k-BDWS-f-close..." << std::endl;
+        prob.set_direction("f");
+        prob.set_intersection("novelty");
+
+        k_FFWS bfs_engine(search_prob,fwd_search_prob);
+
+        bfws_options( search_prob,graph_bwd,fwd_search_prob,graph_fwd,bfs_engine, max_novelty );
+
+        bfs_engine.set_use_novelty_pruning_bwd( true );
+        bfs_engine.set_use_novelty_pruning_fwd( true );
+
+        float bfs_t = do_search( bfs_engine, prob, plan_stream, found_plan,&gen_lms );
+
+        std::cout << "Fast-BFS search completed in " << bfs_t << " secs" << std::endl;
+
+        plan_stream.close();
+
+        return 0;
+    }
+
     else if (vm["k-BDWS-f-head"].as<bool>()){
 
         std::cout << "Starting search with k-BDWS-f-head..." << std::endl;

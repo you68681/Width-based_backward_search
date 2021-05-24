@@ -12,14 +12,15 @@ Please also define LAPKT_PATH as an enviromnent variable. Add the following line
 Please use FF parser when running the code.
 
 
-# Options:: #
+### Options ###
 
+```
   --help                                Show help message. 
   --domain arg                          Input PDDL domain description
   --problem arg                         Input PDDL problem description
   --output arg                          Output file for plan
   --max_novelty arg (=2)                Max width w for novelty (default 2)
-  
+```
 
 # Running forward BFWS (Best First Width Search) #
 
@@ -65,7 +66,7 @@ Polynomial Search Algorithms::
   --k-BDWS-e-random arg (=0)               Check meets-in-the-middle with respect to a random state in the close list, default 2
 ```
 
-## Running k-BDWS-f (front-to-front version) #
+# Running k-BDWS-f (front-to-front version) #
 
 front-to-fnd guides the search with last expanded state by opposite direction.
 
@@ -79,7 +80,7 @@ Polynomial Search Algorithms::
   --k-BDWS-f-close arg (=0)                Check meets-in-the-middle with respect to the full close list, default 2
 ```
 
-## Running FB #
+# Running FB #
 
 ```
 Polynomial Search Algorithms::
@@ -92,12 +93,12 @@ Search Algorithms::
 ```
 
 
-# Credits #
+### Credits ###
 
 This project is a joint work by Chao Lei and Nir Lipovetzky
 
 ### Paper ###
-You can read more about it in the [ICAPS 2021] (https://ojs.aaai.org/index.php/ICAPS/article/view/15965/15776) and [AAAI 2017 paper](http://people.eng.unimelb.edu.au/nlipovetzky/papers/aaai17-BFWS-novelty-exploration.pdf) and [ICAPS 2017 paper](http://people.eng.unimelb.edu.au/nlipovetzky/papers/icaps17-polytime-BFWS.pdf)
+You can read more about it in the [ICAPS 2021](https://ojs.aaai.org/index.php/ICAPS/article/view/15965/15776) and [AAAI 2017 paper(http://people.eng.unimelb.edu.au/nlipovetzky/papers/aaai17-BFWS-novelty-exploration.pdf) and [ICAPS 2017 paper(http://people.eng.unimelb.edu.au/nlipovetzky/papers/icaps17-polytime-BFWS.pdf)
 
 
 

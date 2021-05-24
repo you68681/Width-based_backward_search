@@ -46,7 +46,7 @@ Polynomial Search Algorithms::
   --k-BFWS-backward arg (=0)                Backward k-BFWS(f5), pruning w > k, where k = bound() argument, default 2
 ```
 
-# Running width based bidirectional search algorithms #
+# Running width-based bidirectional search algorithms #
 
 Backward k-BFWS(f5) and Forward k-BFWS(f5) alternate 1-step in each direction
 

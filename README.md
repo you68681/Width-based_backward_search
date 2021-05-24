@@ -63,7 +63,7 @@ Polynomial Search Algorithms::
   
   --k-BDWS-e-close arg (=0)                Check meets-in-the-middle with respect to the full close list, default 2
   
-  --k-BDWS-e-random arg (=0)               Check meets-in-the-middle with respect to a random state in the close list, default 2
+  --k-BDWS-e-random arg (=0)               Check meets-in-the-middle with respect to random states in the close list, default 2
 ```
 
 ## Running k-BDWS-f (front-to-front version) ##

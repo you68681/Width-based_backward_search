@@ -1,7 +1,7 @@
 # BFWS
 Best First Width Search Planner
 
-### Include ###
+### component ###
 
 Forward Best First Width Search Planner
 

@@ -36,3 +36,5 @@ In ICAPS-21 paper the following interfaces are modified:
 tasks.
 
 
+### Paper ###
+You can read more about it in the [ICAPS 2021 paper](https://ojs.aaai.org/index.php/ICAPS/article/view/15965/15776)

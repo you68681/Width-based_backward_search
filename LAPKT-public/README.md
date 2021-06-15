@@ -35,19 +35,22 @@ In ICAPS-21 paper the following interfaces are modified:
 * 'ff': this interface wraps FF parsing components to obtain 'agnostic' looking
 tasks.
 
-```
-set_init( strips_problem, I) and set_goal( strips_problem, G) will set the inital state (I) and goal state (G) to strips_problem. 
 
-If you change it to set_init( strips_problem, G) and set_goal( strips_problem, I), inital state and goal state are exchanged.
-```
+## ff modification regression ##
+    ```
+    set_init( strips_problem, I) and set_goal( strips_problem, G) will set the inital state (I) and goal state (G) to strips_problem. 
 
-```
-If you want to realize Duality, pelase change it to set_init( strips_problem, F\G) and set_goal( strips_problem, F\I). 
+    If you change it to set_init( strips_problem, G) and set_goal( strips_problem, I), inital state and goal state are exchanged.
+    ```
+    
+## ff modification Duality ##
+    ```
+    If you want to realize Duality, pelase change it to set_init( strips_problem, F\G) and set_goal( strips_problem, F\I). 
 
-Also methods op_precs.push_back( gef_conn[i].PC[j] ), op_adds.push_back( gef_conn[i].A[j] ) and op_dels.push_back( gef_conn[i].D[j] ) 
-     need to adjust to satisfy ad = <del; add; pre>
+    Also methods op_precs.push_back( gef_conn[i].PC[j] ), op_adds.push_back( gef_conn[i].A[j] ) and op_dels.push_back( gef_conn[i].D[j] ) 
+    need to adjust to satisfy ad = <del; add; pre>
 
-Please note, in the ICAPS 2021 paper, Dual instances whose goal fluent is already true in the initial state are excluded
+    Please note, in the ICAPS 2021 paper, Dual instances whose goal fluent is already true in the initial state are excluded
 ```
 
 

@@ -36,13 +36,13 @@ In ICAPS-21 paper the following interfaces are modified:
 tasks.
 
 
-#### Regression modification ###
+** Regression modification **
 
     set_init( strips_problem, I) and set_goal( strips_problem, G) will set the inital state (I) and goal state (G) to strips_problem. 
 
     If you change it to set_init( strips_problem, G) and set_goal( strips_problem, I), inital state and goal state are exchanged.
     
-#### Duality modification ####
+** Duality modification **
 
     If you want to realize Duality, pelase change it to set_init( strips_problem, F\G) and set_goal( strips_problem, F\I). 
 

@@ -37,6 +37,7 @@ tasks.
 
 
 #### Regression modification ###
+
     ```
     set_init( strips_problem, I) and set_goal( strips_problem, G) will set the inital state (I) and goal state (G) to strips_problem. 
 

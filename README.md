@@ -85,11 +85,11 @@ Polynomial Search Algorithms::
 ```
 Polynomial Search Algorithms::
 
---forward-backward arg (=0)                 Forward k-BFWS(f5) first and then backward backward k-BFWS(f5) if forward search stops with no solution, default 2
+    --forward-backward arg (=0)             Forward k-BFWS(f5) first and then backward backward k-BFWS(f5) if forward search stops with no solution, default 2
 
 Search Algorithms::
 
---DUAL-FB arg (=1)                          Forward-backward first and then BFWS using h_ff and h_landcount as in AAAI-17 paper
+    --DUAL-FB arg (=1)                      Forward-backward first and then BFWS using h_ff and h_landcount as in AAAI-17 paper
 ```
 
 

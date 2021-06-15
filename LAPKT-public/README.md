@@ -50,7 +50,7 @@ tasks.
     Also methods op_precs.push_back( gef_conn[i].PC[j] ), op_adds.push_back( gef_conn[i].A[j] ) and op_dels.push_back( gef_conn[i].D[j] ) 
     need to adjust to satisfy ad = <del; add; pre>
 
-    Please note, in the ICAPS 2021 paper, Dual instances whose goal fluent is already true in the initial state are excluded
+    Please note, in the ICAPS 2021 paper, dual instances whose goal fluent is already true in the initial state are excluded
     ```
 
 
